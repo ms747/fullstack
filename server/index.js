@@ -20,7 +20,7 @@ app.use("/item", itemsController)
 
 
 app.use((err,req,res,next)=>{
-    res.status(201).json({error:err})
+    res.status(500).json({error:err})
 })
 
 app.listen(port, () => {
