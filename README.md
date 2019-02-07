@@ -1,7 +1,8 @@
-# Backend
+# Full Stack
+## Backend
 - npm install
 - npm start
 
-# Frontend
+## Frontend
 - npm install
 - npm start
