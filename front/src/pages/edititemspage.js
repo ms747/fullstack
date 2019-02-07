@@ -14,7 +14,7 @@ class EditItemPage extends React.Component {
 
 	componentWillMount() {
 		const user = localStorage.getItem("user")
-		if (!user) {
+		if (user !== "admin") {
 			this.props.history.push("/")
 		} else {
 			axios

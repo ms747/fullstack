@@ -14,7 +14,7 @@ class AddItemPage extends React.Component {
 	componentWillMount() {
 		console.log(this.props)
 		const user = localStorage.getItem("user")
-		if (!user) {
+		if (user !== "admin") {
 			this.props.history.push("/")
 		}
 	}
