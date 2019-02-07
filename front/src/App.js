@@ -10,6 +10,7 @@ import ViewItem from "./pages/view_item"
 import AddItemPage from "./pages/additemspage"
 import EditItemPage from "./pages/edititemspage"
 import "./App.css"
+import NotFound from "./pages/404";
 
 class App extends Component {
 	render() {
@@ -29,6 +30,7 @@ class App extends Component {
 						component={EditItemPage}
 					/>
 					<Route path="/inventory/:id" exact component={ViewItem} />
+					<Route component={NotFound}/>
 				</Switch>
 			</Router>
 		)

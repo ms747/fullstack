@@ -37,9 +37,9 @@ const Nav = props => {
 						) : null}
 					</Auth>
 					<li className="nav-item">
-						<a className="nav-link" href="/inventory">
+						<Link className="nav-link" to="/inventory">
 							Howdy, {localStorage.getItem("user")}
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
 						<Link className="nav-link" to="/" onClick={logout}>

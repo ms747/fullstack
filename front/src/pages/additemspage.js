@@ -12,7 +12,6 @@ class AddItemPage extends React.Component {
 	}
 
 	componentWillMount() {
-		console.log(this.props)
 		const user = localStorage.getItem("user")
 		if (user !== "admin") {
 			this.props.history.push("/")
@@ -39,8 +38,9 @@ class AddItemPage extends React.Component {
 	DisplayError = () => {
 		if (this.state.error && this.state.error !== "") {
 			return (
-				<div>
-					<h1>{this.state.error}</h1>
+				<div className="alert alert-dismissible alert-danger">
+					<button type="button" className="close" data-dismiss="alert">&times;</button>
+					<strong>{this.state.error}</strong>
 				</div>
 			)
 		}

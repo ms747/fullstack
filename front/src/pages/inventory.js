@@ -17,9 +17,7 @@ class Inventory extends React.Component {
 			this.props.history.push("/")
 		} else {
 			axios.get("http://localhost:3333/item").then(data => {
-				this.setState({ items: data.data.items }, () => {
-					console.log(this.state.items)
-				})
+				this.setState({ items: data.data.items })
 			})
 		}
 	}

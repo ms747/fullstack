@@ -25,10 +25,6 @@ class ViewItem extends React.Component {
 		}
 	}
 
-	componentDidMount() {
-		console.log(this.props)
-	}
-
 	renderItem = () => {
 		if (this.state.item) {
 			return (
