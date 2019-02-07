@@ -11,8 +11,8 @@ class AddItemPage extends React.Component {
 		error: "",
 	}
 
-	componentWillMount(){
-		console.log(this.props);
+	componentWillMount() {
+		console.log(this.props)
 		const user = localStorage.getItem("user")
 		if (!user) {
 			this.props.history.push("/")

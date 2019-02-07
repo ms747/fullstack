@@ -16,10 +16,21 @@ const Utilities = props => {
 
 	return (
 		<div>
-			<button className="btn btn-primary" onClick={viewItem}>View</button>
+			<button className="btn btn-primary" onClick={viewItem}>
+				View
+			</button>
 			<Auth>
-				<button className="btn btn-info" onClick={editItem}>Edit</button>
-				<button className="btn btn-danger" onClick={()=>{deleteItem(props.id)}}>Delete</button>
+				<button className="btn btn-info" onClick={editItem}>
+					Edit
+				</button>
+				<button
+					className="btn btn-danger"
+					onClick={() => {
+						deleteItem(props.id)
+					}}
+				>
+					Delete
+				</button>
 			</Auth>
 		</div>
 	)

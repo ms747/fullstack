@@ -83,7 +83,10 @@ router.post("/:id", (req, res, next) => {
 	if (foundItemIndex === -1) {
 		next("item not found")
 	} else {
-		items[foundItemIndex] = { ...req.body, id: parseInt(req.params.id) }
+		items[foundItemIndex] = {
+			...req.body,
+			id: parseInt(req.params.id),
+		}
 		res.json({ item: items[foundItemIndex] })
 	}
 })
