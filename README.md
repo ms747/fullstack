@@ -1,7 +1,7 @@
-#Backend
-npm install
-npm start
+# Backend
+ npm install
+ npm start
 
-#Frontend
-npm install
-npm start
+# Frontend
+ npm install
+ npm start
