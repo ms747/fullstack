@@ -50,8 +50,9 @@ class AddItemPage extends React.Component {
 		return (
 			<div>
 				<Nav name="< Back" showSubMenu={false} {...this.props} />
+				<div className="container mt-5">
+				<h1>Add Item</h1>
 				{this.DisplayError()}
-				<div className="container">
 					<form onSubmit={this.handleForm}>
 						<fieldset className="card pr-2 pl-2 pb-4 text-dark">
 							<div>

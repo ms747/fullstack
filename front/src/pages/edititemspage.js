@@ -57,8 +57,15 @@ class EditItemPage extends React.Component {
 	DisplayError = () => {
 		if (this.state.error && this.state.error !== "") {
 			return (
-				<div>
-					<h1>{this.state.error}</h1>
+				<div className="alert alert-dismissible alert-danger">
+					<button
+						type="button"
+						className="close"
+						data-dismiss="alert"
+					>
+						&times;
+					</button>
+					<strong>{this.state.error}</strong>
 				</div>
 			)
 		}
@@ -67,7 +74,7 @@ class EditItemPage extends React.Component {
 	render() {
 		return (
 			<div>
-				<Nav name="< Back" />
+				<Nav name="< Back" showSubMenu={false} {...this.props} />
 				<div className="container mt-5">
 					<h1>Edit Item</h1>
 					{this.DisplayError()}
